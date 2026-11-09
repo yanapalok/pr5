@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>McDonald's: навчальна демонстрація</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+ 
+  <header class="site-header">
+    <div class="brand">McDonald's <span class="brand-note">демо-сторінка</span></div>
+
+   
+    <div class="session" role="timer" aria-label="Час сесії">
+      <span class="session-label">Ви на сторінці вже</span>
+      <span class="session-time" id="session-time">00:00</span>
+    </div>
+
+    <nav class="nav" id="nav" aria-label="Основна навігація">
+      <a href="#menu" class="nav-link" data-route="menu">Меню</a>
+      <a href="#about" class="nav-link" data-route="about">Про проєкт</a>
+      <a href="#feedback" class="nav-link" data-route="feedback">Зворотний зв'язок</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="menu" class="page" data-title="Меню">
+      <h1>Що замовимо сьогодні?</h1>
+      <p class="lead">Кілька популярних позицій. Ціни умовні, це навчальний макет.</p>
+      <ul class="catalog">
+        <li class="item">
+          <h2>Біг Мак</h2>
+          <p>Дві котлети, соус, салат, сир, огірок, цибуля на тристоронній булочці.</p>
+          <span class="price">125 ₴</span>
+        </li>
+        <li class="item">
+          <h2>Чізбургер</h2>
+          <p>Класична котлета, сир, гірчиця, кетчуп, цибуля.</p>
+          <span class="price">65 ₴</span>
+        </li>
+        <li class="item">
+          <h2>Картопля фрі</h2>
+          <p>Хрустка, гаряча, з сіллю. Підходить до всього меню.</p>
+          <span class="price">55 ₴</span>
+        </li>
+        <li class="item">
+          <h2>Макфлурі</h2>
+          <p>Морозиво з наповнювачем на вибір.</p>
+          <span class="price">70 ₴</span>
+        </li>
+      </ul>
+    </section>
+
+    <section id="about" class="page is-hidden" data-title="Про проєкт">
+      <h1>Історія McDonald's</h1>
+      <p class="lead">Від невеликого придорожнього ресторану до однієї з найвідоміших мереж швидкого харчування у світі.</p>
+      <p>Усе почалося у 1940 році, коли брати Річард і Моріс Макдональди відкрили ресторан у Каліфорнії. Згодом вони придумали «швидку систему обслуговування»: обмежене меню, стандартні рецепти й швидка видача замовлень.</p>
+      <p>У 1955 році підприємець Рей Крок відкрив перший ресторан за франшизою, і мережа почала швидко рости. Біг Мак з'явився у 1967 році та став візитівкою компанії.</p>
+      <p>В Україні перший ресторан відкрився в Києві у 1997 році. Сьогодні в країні їх десятки, а меню поєднує класичні позиції та локальні новинки.</p>
+      <p class="note">Ця сторінка є навчальним макетом і не пов'язана з компанією McDonald's.</p>
+    </section>
+
+    <section id="feedback" class="page is-hidden" data-title="Зворотний зв'язок">
+      <h1>Залиште відгук</h1>
+      <p class="lead">Розкажіть, що сподобалось, а що варто покращити.</p>
+      <form id="feedback-form" class="form" novalidate>
+        <label for="name">Ім'я</label>
+        <input type="text" id="name" name="name" required autocomplete="name">
+
+        <label for="email">Електронна пошта</label>
+        <input type="email" id="email" name="email" required autocomplete="email">
+
+        <label for="message">Відгук</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Надіслати</button>
+        <p class="form-status" id="form-status" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+</body>
+</html>
